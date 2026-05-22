@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="con">
+    <h1>
+      Password Generator
+    </h1>
+
+    <div class="display-generator">
+      <input readonly placeholder="Password" class="dis1" data-passwordDisplay>
+
+
+      <button data-copy>
+        <span data-copymsg class="tool"></span>
+        <img src="asset/copy.svg" alt="copy" width="23" height="23">
+
+    </button>
+    
+  </div>
+    <div class="inputcon">
+    <!-- passwordbox -->
+      <div class="passlength">
+        <p>Password Length</p>
+        <p data-lengthnum>0</p>
+      </div>
+      <!-- slider -->
+      <input 
+      type="range" 
+      min="1" 
+      max="20" 
+      value="20" 
+      step="1"
+      id="slider"
+      class="slider"
+      data-lengthslider
+    >
+    <!--4 checkboxes -->
+    <div class="check">
+      <input type="checkbox" id="uppercase">
+      <label for="uppercase">Include Uppercase Letters</label>
+      
+    </div>
+    <div class="check">
+      <input type="checkbox" id="lowercase">
+      <label for="lowercase">Include Lowercase Letters</label>
+      
+    </div>
+
+    <div class="check">
+      <input type="checkbox" id="numbers">
+      <label for="numbers">Include numbers</label>
+      
+    </div>
+    <div class="check">
+      <input type="checkbox" id="symbol">
+      <label for="symbol">Include Symbol</label>
+      
+    </div>
+
+    <!-- strength -->
+     <div class="strength">
+      <p>Strength</p>
+      <div data-strengthindicate></div>
+     </div>
+
+     <!-- button -->
+      <button class="generateButton">Generate Password</button>
+    </div>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
